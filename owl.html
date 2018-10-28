@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+<title>Owl Carousel</title>
+</head>
+
+<body>
+	<div class="slider-area">
+		 <div class="slider-active owl-carousel">
+			<img src="img/1.jpg" alt="flower1">
+			<img src="img/2.jpg" alt="flower2">
+			<img src="img/3.jpg" alt="flower3">
+			<img src="img/4.jpg" alt="flower4">
+			<img src="img/5.jpg" alt="flower5">
+			<img src="img/5.jpg" alt="flower5">
+			<img src="img/5.jpg" alt="flower5">
+		 </div>
+	</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script>
+ $('.owl-carousel').owlCarousel({
+    loop:true,
+	autoplayTimeout:4000,
+    nav:true,
+	margin:20,
+	navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+	autoplay:true,
+    responsive:{
+        0:{
+            items:6
+        },
+        600:{
+            items:6
+        },
+        1000:{
+            items:6 
+        }
+    }
+})	
+</script>
+
+</body>
+</html>
